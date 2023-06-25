@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Dice Roller</string>
+    <string name="numero">3</string>
+    <string name="botao_rolar">Rolar</string>
 </resources>
