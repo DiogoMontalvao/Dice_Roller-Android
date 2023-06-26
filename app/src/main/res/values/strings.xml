@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Dice Roller</string>
-    <string name="botaoRolarDado">ROLAR</string>
+    <string name="textBotaoRolarDado">ROLAR</string>
+    <string name="textoNumeroLadosDado">Dado de ${numeroLadosDado} Lados</string>
 </resources>
