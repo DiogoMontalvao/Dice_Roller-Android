@@ -6,18 +6,86 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textViewResultadoRolagem"
+        android:id="@+id/textViewTituloLadosDado1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-black"
-        android:text="0"
+        android:layout_marginTop="150dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:textColor="#000000"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewResultadoTitulo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Dado de 6 lados" />
+
+    <TextView
+        android:id="@+id/textViewTituloResultado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Resultado"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloLadosDado1" />
+
+    <TextView
+        android:id="@+id/textViewResultadoRolagem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloResultado1"
         tools:text="0" />
+
+    <TextView
+        android:id="@+id/textViewTituloLadosDado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultadoRolagem1"
+        tools:text="Dado de 6 lados" />
+
+    <TextView
+        android:id="@+id/textViewTituloResultado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Resultado"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloLadosDado2" />
+
+    <TextView
+        android:id="@+id/textViewResultadoRolagem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloResultado2"
+        tools:text="0" />
+
 
     <Button
         android:id="@+id/botaoRolarDado"
@@ -31,31 +99,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewResultadoRolagem" />
-
-    <TextView
-        android:id="@+id/textViewResultadoTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="67dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Resultado"
-        android:textColor="#000000"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewTituloLadosDado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Dado de 6 lados" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultadoRolagem2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
