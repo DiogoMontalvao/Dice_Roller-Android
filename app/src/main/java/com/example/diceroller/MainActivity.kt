@@ -11,10 +11,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val numeroLadosDado: Int = 20
+        val numeroLadosDado: Int = 6
 
-        val textViewNumeroLadosDado: TextView = (findViewById(R.id.textViewNumeroLadosDado))
-        textViewNumeroLadosDado.text = "Dado de ${numeroLadosDado} Lados"
+        val textViewTituloLadosDado: TextView = (findViewById(R.id.textViewTituloLadosDado))
+        textViewTituloLadosDado.text = "Dado de ${numeroLadosDado} Lados"
 
         val botaoRolarDado: Button = findViewById(R.id.botaoRolarDado)
         botaoRolarDado.setOnClickListener { rolarDado(numeroLadosDado) }
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
 
     private fun rolarDado(numeroLadosDado: Int) {
 
-        val rolarDado = Dado(numeroLadosDado).rolar()
+        val rolarDado = Dado(numeroLadosDado).rolar
         val textViewResultadoRolagem: TextView = findViewById(R.id.textViewResultadoRolagem)
         textViewResultadoRolagem.text = rolarDado.toString()
     }
