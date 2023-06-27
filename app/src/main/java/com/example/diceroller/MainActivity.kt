@@ -11,17 +11,19 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val numeroLadosDado: Int = 100
-        val textViewNumeroLadosDado: TextView = findViewById(R.id.textViewNumeroLadosDado)
+        val numeroLadosDado: Int = 20
+
+        val textViewNumeroLadosDado: TextView = (findViewById(R.id.textViewNumeroLadosDado))
         textViewNumeroLadosDado.text = "Dado de ${numeroLadosDado} Lados"
 
         val botaoRolarDado: Button = findViewById(R.id.botaoRolarDado)
-        botaoRolarDado.setOnClickListener {
+        botaoRolarDado.setOnClickListener { rolarDado(numeroLadosDado) }
+    }
 
-            val textViewResultadoRolagem: TextView = findViewById(R.id.textViewResultadoRolagem)
-            textViewResultadoRolagem.text = (1..numeroLadosDado)
-                .random()
-                .toString()
-        }
+    private fun rolarDado(numeroLadosDado: Int) {
+
+        val rolarDado = Dado(numeroLadosDado).rolar()
+        val textViewResultadoRolagem: TextView = findViewById(R.id.textViewResultadoRolagem)
+        textViewResultadoRolagem.text = rolarDado.toString()
     }
 }
