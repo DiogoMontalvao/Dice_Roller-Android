@@ -6,98 +6,92 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textViewTituloLadosDado1"
+        android:id="@+id/textTituloLadosDado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-black"
         android:textColor="#000000"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Dado de 6 lados" />
+        tools:text="@string/textoTituloLadosDado" />
 
     <TextView
-        android:id="@+id/textViewTituloResultado1"
+        android:id="@+id/textClicaBotao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-black"
-        android:text="Resultado"
+        android:text="@string/textoClicaBotao"
+        android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloLadosDado1" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageDado"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageDado2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewResultadoRolagem1"
+        android:id="@+id/textNumeroRolado"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-black"
-        android:text="0"
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageDado"
+        app:layout_constraintStart_toStartOf="@+id/imageDado"
+        app:layout_constraintTop_toBottomOf="@+id/imageDado" />
+
+    <ImageView
+        android:id="@+id/imageDado2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloResultado1"
-        tools:text="0" />
+        app:layout_constraintStart_toEndOf="@id/imageDado"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textViewTituloLadosDado2"
+        android:id="@+id/textNumeroRolado2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textColor="#000000"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewResultadoRolagem1"
-        tools:text="Dado de 6 lados" />
-
-    <TextView
-        android:id="@+id/textViewTituloResultado2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-black"
-        android:text="Resultado"
         android:textColor="#000000"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloLadosDado2" />
-
-    <TextView
-        android:id="@+id/textViewResultadoRolagem2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="sans-serif-black"
-        android:text="0"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloResultado2"
-        tools:text="0" />
-
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageDado2"
+        app:layout_constraintStart_toStartOf="@+id/imageDado2"
+        app:layout_constraintTop_toBottomOf="@+id/imageDado2" />
 
     <Button
-        android:id="@+id/botaoRolarDado"
+        android:id="@+id/buttonRolarDado"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
         android:fontFamily="sans-serif-black"
-        android:text="@string/textBotaoRolarDado"
+        android:text="@string/textoBotaoRolarDado"
         android:textAlignment="center"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewResultadoRolagem2" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

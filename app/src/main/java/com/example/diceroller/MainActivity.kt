@@ -2,6 +2,7 @@ package com.example.diceroller
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 
@@ -11,26 +12,49 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val numeroLadosDado1: Int = 6
-        val numeroLadosDado2: Int = 20
+        val numeroLadosDados: Int = 6
 
-        val textViewTituloLadosDado1: TextView = findViewById(R.id.textViewTituloLadosDado1)
-        textViewTituloLadosDado1.text = "Dado de ${numeroLadosDado1} Lados"
-        val textViewTituloLadosDado2: TextView = findViewById(R.id.textViewTituloLadosDado2)
-        textViewTituloLadosDado2.text = "Dado de ${numeroLadosDado2} Lados"
+        val textTituloLadosDados: TextView = findViewById(R.id.textTituloLadosDado)
+        textTituloLadosDados.text = "Dado de ${numeroLadosDados} Lados"
 
-        val botaoRolarDado: Button = findViewById(R.id.botaoRolarDado)
-        botaoRolarDado.setOnClickListener { rolarDados(numeroLadosDado1, numeroLadosDado2) }
+        val buttonRolarDado: Button = findViewById(R.id.buttonRolarDado)
+        buttonRolarDado.setOnClickListener { rolarDados(numeroLadosDados) }
     }
 
-    private fun rolarDados(numeroLadosDado1: Int, numeroLadosDado2: Int) {
+    private fun rolarDados(numeroLadosDado: Int) {
+        val resultadoRolagem1 = Dado(numeroLadosDado).rolar()
+        val resultadoRolagem2 = Dado(numeroLadosDado).rolar()
 
-        fun rolarDado1(): Int {return Dado(numeroLadosDado1).rolar }
-        val textViewResultadoRolagem1: TextView = findViewById(R.id.textViewResultadoRolagem1)
-        textViewResultadoRolagem1.text = rolarDado1().toString()
+        val textClicaBotao: TextView = findViewById(R.id.textClicaBotao)
+        val imageDado1: ImageView = findViewById(R.id.imageDado)
+        val imageDado2: ImageView = findViewById(R.id.imageDado2)
+        val textNumeroRolado1: TextView = findViewById(R.id.textNumeroRolado)
+        val textNumeroRolado2: TextView = findViewById(R.id.textNumeroRolado2)
 
-        fun rolarDado2(): Int { return Dado(numeroLadosDado2).rolar }
-        val textViewResultadoRolagem2: TextView = findViewById(R.id.textViewResultadoRolagem2)
-        textViewResultadoRolagem2.text = rolarDado2().toString()
+        textClicaBotao.text = ""
+
+        alteraTextNumeroRolado(textNumeroRolado1, resultadoRolagem1)
+        alteraTextNumeroRolado(textNumeroRolado2, resultadoRolagem2)
+
+        alteraImageDado(imageDado1, resultadoRolagem1)
+        alteraImageDado(imageDado2, resultadoRolagem2)
+    }
+
+    private fun alteraImageDado(textView: ImageView, resultadoRolagem: Int) {
+        val imageResourceDado = when (resultadoRolagem) {
+            1 -> R.drawable.dado1
+            2 -> R.drawable.dado2
+            3 -> R.drawable.dado3
+            4 -> R.drawable.dado4
+            5 -> R.drawable.dado5
+            else -> R.drawable.dado6
+        }
+        textView.setImageResource(imageResourceDado)
+    }
+
+    private fun alteraTextNumeroRolado(textView: TextView, resultadoRolagem: Int) {
+        textView.text = resultadoRolagem.toString()
     }
 }
+
+
