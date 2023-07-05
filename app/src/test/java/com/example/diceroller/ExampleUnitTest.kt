@@ -1,8 +1,7 @@
 package com.example.diceroller
 
+import junit.framework.TestCase.assertTrue
 import org.junit.Test
-
-import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -11,7 +10,10 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun gera_numero() {
+        val dado = Dado(numeroLadosDado = 6)
+        val resultadoRolagem = dado.rolar()
+
+        assertTrue("O valor não está entre 1 e 6", resultadoRolagem in 1..6)
     }
 }
