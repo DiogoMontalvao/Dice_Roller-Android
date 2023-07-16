@@ -1,6 +1,6 @@
 package com.example.diceroller
 
-import junit.framework.TestCase.assertTrue
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 /**
@@ -11,9 +11,11 @@ import org.junit.Test
 class ExampleUnitTest {
     @Test
     fun gera_numero() {
-        val dado = Dado(numeroLadosDado = 6)
+        val numeroLadosDado = 20
+
+        val dado = Dado(numeroLadosDado)
         val resultadoRolagem = dado.rolar()
 
-        assertTrue("O valor não está entre 1 e 6", resultadoRolagem in 1..6)
+        assertTrue("O valor não está entre 1 e $numeroLadosDado", resultadoRolagem in 1..numeroLadosDado)
     }
 }
