@@ -12,7 +12,7 @@
         android:layout_marginTop="80dp"
         android:fontFamily="sans-serif-black"
         android:textColor="#000000"
-        android:textSize="50sp"
+        android:textSize="46sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +26,7 @@
         android:text="@string/textoClicaBotao"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="40sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,10 +38,10 @@
         android:layout_height="120dp"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRolarDado"
         app:layout_constraintEnd_toStartOf="@+id/imageDado2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textTituloLadosDado" />
 
     <TextView
         android:id="@+id/textNumeroRolado"
@@ -61,10 +61,10 @@
         android:layout_height="120dp"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRolarDado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageDado"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTituloLadosDado"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView

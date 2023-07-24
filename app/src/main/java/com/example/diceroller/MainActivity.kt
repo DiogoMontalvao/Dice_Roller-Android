@@ -15,7 +15,7 @@ class MainActivity : ComponentActivity() {
         val numeroLadosDados: Int = 6
 
         val textTituloLadosDados: TextView = findViewById(R.id.textTituloLadosDado)
-        textTituloLadosDados.text = "Dado de ${numeroLadosDados} Lados"
+        textTituloLadosDados.text = resources.getString(R.string.textoTituloLadosDado, numeroLadosDados)
 
         val buttonRolarDado: Button = findViewById(R.id.buttonRolarDado)
         buttonRolarDado.setOnClickListener { rolarDados(numeroLadosDados) }
