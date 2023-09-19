@@ -3,6 +3,6 @@ Desenvolvido a partir do curso: [Android Basics in Kotlin (Unit 1: Kotlin basics
 
 O App realiza a rolagem de dois dados de 6 lados.
 
-![a](https://github.com/DiogoMontalvao/Dice_Roller-Android/assets/109600744/03eca65f-ad60-4b28-b87d-4b63824346fc)
-![b](https://github.com/DiogoMontalvao/Dice_Roller-Android/assets/109600744/511c6680-214d-40a5-aa82-5bb5642fcc38)
-![c](https://github.com/DiogoMontalvao/Dice_Roller-Android/assets/109600744/ad007f03-1472-4499-9b77-d765808efcbe)
+![269111488-88808bca-f097-4fe3-aa98-57790bf6f504](https://github.com/DiogoMontalvao/Dice_Roller-Android/assets/109600744/f07e92ef-c6c1-4573-b405-2060658b1554)
+![269111488-88808bca-f097-4fe3-aa98-57790bf6f504](https://github.com/DiogoMontalvao/Dice_Roller-Android/assets/109600744/f07e92ef-c6c1-4573-b405-2060658b1554)
+![269111488-88808bca-f097-4fe3-aa98-57790bf6f504](https://github.com/DiogoMontalvao/Dice_Roller-Android/assets/109600744/f07e92ef-c6c1-4573-b405-2060658b1554)
