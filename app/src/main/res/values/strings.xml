@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Dice Roller</string>
     <string name="textoTituloLadosDado">Dados de %1$d Lados</string>
-    <string name="textoClicaBotao">Rola a Porra dos Dados</string>
+    <string name="textoClicaBotao">Clique no botão para rolar!</string>
     <string name="textoBotaoRolarDado">ROLAR</string>
 </resources>

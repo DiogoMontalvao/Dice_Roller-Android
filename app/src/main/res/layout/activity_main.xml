@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/textoTituloLadosDado" />
+        tools:text="Dados de N Lados" />
 
     <TextView
         android:id="@+id/textClicaBotao"
@@ -26,7 +26,7 @@
         android:text="@string/textoClicaBotao"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="36sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
