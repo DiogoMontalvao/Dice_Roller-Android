@@ -9,7 +9,6 @@ Realiza a rolagem de dois dados de 6 lados.
   - ImageView
   - String resources
   - Unit test
-
 ##
 ![a](https://github.com/DiogoMontalvao/Dice_Roller-Android/assets/109600744/a69cabae-8b98-4c61-8a81-3af3570ca06e)
 ![b](https://github.com/DiogoMontalvao/Dice_Roller-Android/assets/109600744/ee199a73-cfb1-44c7-af00-9929821efc7a)
