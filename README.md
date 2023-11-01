@@ -1,7 +1,7 @@
 # Dice_Roller-Android
 Desenvolvido a partir do curso: [Android Basics in Kotlin (Unit 1: Kotlin basics)](https://developer.android.com/courses/android-basics-kotlin/unit-1), disponibilizado pelo Android Developers - Google.
 ##
-Realiza a rolagem de dois dados de 6 lados.
+Rolagem de dois dados de 6 lados.
 
 **O projeto possui:**
 
