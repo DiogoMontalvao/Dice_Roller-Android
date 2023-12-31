@@ -3,7 +3,7 @@ Desenvolvido a partir do curso: [Android Basics in Kotlin (Unit 1: Kotlin basics
 ##
 Rolagem de dois dados de 6 lados.
 
-**O projeto possui:**
+**Foco no aprendizado das ferramentas:**
 
   - Button
   - ImageView
